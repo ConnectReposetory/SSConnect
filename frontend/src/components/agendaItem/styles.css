@@ -1,0 +1,158 @@
+.agendaItem {
+  min-height: 200px
+}
+
+.agendaItem {
+  min-height: 200px;
+  padding: 10px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.agendaItemContent {
+    position: relative;
+}
+
+.agendaItem .dateLabel{
+  margin-top: -40px;
+}
+
+.agendItemHeader {
+  background-position: center center;
+  background-size: cover;
+  transition: height 0.5s ease;
+  height: 80px
+}
+
+.agendaTitle {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  line-height: 0.8;
+  color: white;
+  margin-left: 120px;
+  margin-top: -20px;
+  transition: margin 0.5s ease, color 0.3s ease 0.5s;
+}
+.agendaTime {
+    display: block;
+    font-size: 14px;
+    color: black;
+    margin-top: 3px;
+    margin-bottom: -5px;
+    transition: color 0.3s ease 0.5s;
+}
+
+.agendaTeaser{
+  margin-left: 120px;
+  transition: margin 0.5s ease;
+  color: black;
+
+}
+.agendaTeaser p{
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.agendaOnline{
+  margin-left: 120px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  line-height: 0.8;
+  color: white;
+  padding-top: 15px;
+  margin-bottom: -5px;
+  text-align: right;
+}
+
+.agendaLink {
+    height: 0;
+    text-align: right;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.agendaLink a {
+    color: #E41B72;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    line-height: 0.8;
+    text-decoration: none;
+}
+.agendaPartner {
+    height: 0px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: height 0.5s ease, background-color 0.5s ease;
+    overflow: hidden;
+}
+
+.agendaPartnerLogo {
+    height: 60px;
+    width: 100px;
+    border: 2px solid #E41B72;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-left: 10px;
+}
+
+.agendaPartnerName {
+    color: #E41B72;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* active */
+
+.agendaItem.active {
+    background-color: pink;
+}
+
+.agendaItem.active .agendaTitle{
+    color: #E41B72;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+
+.agendaItem.active .agendaTime {
+    color: white;
+}
+
+.agendaItem.active .agendaOnline{
+    top: 33px;
+    right: 0px;
+    position: absolute;
+}
+.agendaItem.active .agendaTeaser{
+    margin: 0px;
+    padding-top: 5px;
+    color: white;
+}
+.agendaItem.active .agendaLink{
+    height: 35px;
+    line-height: 35px;
+}
+
+.agendaItem.active .agendaPartner{
+    height: 80px;
+    margin:  0 -10px -15px -10px;
+    background-color: white;
+}
+
+
+
+

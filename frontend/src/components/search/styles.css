@@ -1,0 +1,107 @@
+
+
+.search{
+  width: 100%;
+  background-color: black;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px 10px 20px;
+  box-sizing: border-box;
+}
+
+.searchRow{
+  display: flex;
+  flex-direction: row;
+  margin: 2px 0 2px 0;
+  width: 210px;
+}
+
+.actionRow{
+  display: flex;
+  flex-direction: row;
+  margin: 2px 0 2px 0;
+  justify-content: flex-end;
+}
+
+
+.searchRowLabel{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  align-items: center;
+  margin-right: 3px;
+  padding-top: 3px;
+}
+
+.searchSelect{
+  flex-grow: 1;
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  height: 22px;
+  padding-left: 3px;
+  line-height: 24px;
+  background: white url(./assets/selectArrow.svg) center right 3px no-repeat;
+  background-size: 13px 22px;
+}
+
+
+.toggle {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.toggleOption {
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  color: white;
+  height: 22px;
+  padding: 0 4px 0 4px;
+  cursor: pointer;
+}
+.toggleOption.selected{
+  background-color: white;
+  color: black;
+
+}
+
+.actionButton{
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  color: black;
+  height: 22px;
+  padding: 0 5px 0 5px;
+  margin-top: 2px;
+  text-transform: uppercase;
+  padding-top: 2px;
+  padding-right: 17px;
+  background: #E41B72 url(./assets/actionNextArrow.svg) center right 3px no-repeat;
+  background-size: 10px 22px;
+  cursor: pointer;
+
+}
+
+.resetButtonContainer{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.resetButton{
+  background: transparent url(./assets/resetIcon.svg) center center no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+

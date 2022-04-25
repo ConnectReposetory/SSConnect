@@ -1,0 +1,40 @@
+.pageContainer{
+  max-width: 900px;
+  min-width: 320px;
+  margin: 50px auto 0 auto;
+  padding: 0 15px 0 15px;
+  box-sizing: border-box;
+}
+
+.home-container{
+  height: 100%;
+}
+
+.itemList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.itemList li {
+  flex-basis: 50%;
+  -ms-flex: auto;
+  width: 250px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+.itemList li.selected {
+  background: pink;
+  margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .itemList li {
+    flex-basis: 100%;
+  }
+}

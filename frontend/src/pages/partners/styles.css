@@ -1,0 +1,76 @@
+.defaultContainer.partnerContainer{
+  background-color: #3AA199;
+}
+.partnerContainer a,
+.partnerContainer h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.partnerContainer p {
+  color: black
+}
+
+.partnerList {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.partnerItemContainer{
+  background: white;
+  min-height: 100px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+
+}
+.logoContainer{
+  background-color: #dddddd;
+  width: 100px;
+  height: 100px;
+
+}
+
+.partnerLogo {
+  width: 100px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.partnerInfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.partnerDescription{
+  flex-grow: 1;
+
+}
+
+.partnerDescription p{
+  margin-top: 0 !important;
+  color: black;
+}
+
+.partnerLink{
+  text-align: end;
+  width: 100%;
+}
+
+.partnerLink a {
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  color: black;
+  height: 22px;
+  padding: 0 5px 0 5px;
+  margin-top: 2px;
+  text-transform: uppercase;
+  padding-top: 2px;
+  padding-right: 17px;
+  background: #E41B72 url(../../components/search/assets/actionNextArrow.svg) center right 3px no-repeat;
+  background-size: 10px 22px;
+  cursor: pointer;
+}

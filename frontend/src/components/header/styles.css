@@ -1,0 +1,159 @@
+
+
+.header{
+  height: 240px;
+  background: transparent url("./assets/default.jpg") bottom center no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.header.home{
+  background: #38A7DF url("./assets/sunset.svg") bottom center no-repeat;
+  background-size: auto 240px;
+  border-bottom: 2px solid black;
+}
+
+.agenda-header{
+  height: 70px;
+}
+
+.header-container{
+  max-width: 900px;
+  min-width: 320px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.extra-cloud{
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  background:transparent url("./assets/extra-cloud.svg") bottom center no-repeat;
+  background-size: contain;
+  top: -165px;
+  left: -30px
+}
+
+.logo{
+  background:transparent url("./assets/logo_connect.png") bottom center no-repeat;
+  height: 88px;
+  width: 195px;
+  position: absolute;
+  top: -27px;
+  left: 10px;
+  cursor: pointer;
+  transition: top 0.5s ease;
+  background-size: cover;
+}
+
+.flying{
+  background:transparent url("./assets/flying.svg") bottom center no-repeat;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: -70px;
+  right: -10px;
+}
+
+.standing{
+  background:transparent url("./assets/standing.svg") bottom center no-repeat;
+  height: 300px;
+  width: 120px;
+  position: absolute;
+  bottom: -200px;
+  left: -68px;
+}
+
+.search-container{
+  flex-basis: 50%;
+  -ms-flex: auto;
+  width: 250px;
+  position: relative;
+  padding: 0 10px 0 25px;
+  box-sizing: border-box;
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 180px;
+  }
+  .logo {
+    top: 20px;
+  }
+  .header.home {
+    height: 280px;
+    background-position: 85% 0;
+    background-size: auto 125px;
+  }
+  .search-container{
+    flex-basis: 100%;
+    margin-left: 0;
+    padding: 0;
+    margin-top: 120px;
+  }
+  .flying{
+    width: 130px;
+    bottom: 120px;
+    right: 5px;
+    pointer-events: none;
+  }
+  .extra-cloud {
+    display: none;
+  }
+  .standing {
+    display: none;
+  }
+  .agenda-header {
+    display: none;
+  }
+}
+
+
+
+.container{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  flex-direction: colum;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.container .buttons
+{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+margin-bottom: 20px;
+}
+.container .buttons .btn{
+  padding: 0 10px;
+  display: inline-flex;
+  background: #ddd;
+  color: #fff;
+  margin-left: 10px;
+  cursor:pointer;
+}
+.container .buttons .btn.active
+{
+  background: #444;
+}
+.container .buttons .btn:nth-child(2){
+  font-size: 1.5em;
+}
+.container .buttons .btn.btn:nth-child(3)
+{
+  font-size:2em;
+  color: #444;
+}
+.container .content h2,
+.container .content p
+{
+transition: 0.5s;
+}

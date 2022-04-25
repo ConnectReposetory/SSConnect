@@ -1,0 +1,28 @@
+
+# files
+.git
+.idea
+
+**/.DS_Store
+**/.gitignore
+**/.gitattributes
+
+# ignore for app
+app/node_modules
+# ignore for server
+server/bootstrap/cache/*
+server/storage/app/*
+server/storage/framework/cache/*
+server/storage/framework/sessions/*
+server/storage/framework/testing/*
+server/storage/framework/views/*
+server/storage/framework/jms-cache/*
+server/storage/framework/jms-cache/*
+server/storage/framework/logs/*
+server/vendor
+server/node_modules
+server/.env*
+server/.phpstorm.meta.php
+server/_ide_helper.php
+.phpunit.result.cache
+

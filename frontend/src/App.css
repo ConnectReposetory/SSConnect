@@ -1,0 +1,113 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #3AA199;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+#root{
+  height: 100%;
+
+}
+
+ul, li{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+select::-ms-expand {
+  display: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.pageContainer{
+  max-width: 900px;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  color: #E41B72;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+h2{
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+a{
+  text-decoration: none;
+  color: #E41B72;
+}
+
+.defaultContainer {
+  min-height: calc(100% - 35px);
+  background-color: white
+}
+
+.defaultPage{
+  max-width: 900px;
+  min-width: 320px;
+  margin: 0 auto 0 auto;
+  padding: 0 15px 0 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.defaultPage p {
+  margin: 10px 0 10px 0;
+}
+
+.paragraphIntro {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.paragraphTitle {
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  color: #3AA199;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-right: 20px;
+  min-width: 50px;
+}
+
+.paragraphIntroBody {
+  flex-grow: 1;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
